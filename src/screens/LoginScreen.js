@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, StyleSheet, TextInput, TouchableOpacity, View} from 'react-native';
+import { Text, StyleSheet, TextInput, TouchableOpacity, View, ImageBackground} from 'react-native';
 
 
 class LoginScreen extends React.Component {
@@ -10,7 +10,7 @@ class LoginScreen extends React.Component {
     }
     
     login_click = () => {
-        if(this.state.email == "techrabbit.ptcc@gmail.com" && this.state.password == "123")
+        if(this.state.email == "Email@email.com" && this.state.password == "123")
         this.props.navigation.navigate('Home')
         else alert('Email ou senha, incorretos!')
     }
@@ -20,7 +20,7 @@ class LoginScreen extends React.Component {
     return(
         <View style={styles.keyboard}>
             <View>
-                <Text style={styles.title}>Techrabbit Im�veis</Text>
+               <Text style={styles.title}>Techrabbit Imóveis</Text>
                 <TextInput
                 style={styles.input1}
                 placeholder="E-mail"
@@ -52,13 +52,16 @@ class LoginScreen extends React.Component {
 const styles = StyleSheet.create({
     title:{
         fontWeight:"bold",
-        fontSize:50,
-        color:"#FFFAFA",
-        marginBottom:30,
-        paddingHorizontal: 50
+        fontSize:40,
+        color:"#000000",
+        alignItems: 'center',
+        marginBottom:10,
+        paddingHorizontal: 100
     }, 
     texto: {
+      fontSize: 18,
       color:'#FFFAFA',
+      alignItems: 'center',
       paddingHorizontal: 15
     },
     keyboard:{
@@ -68,21 +71,22 @@ const styles = StyleSheet.create({
         backgroundColor: '#00FF00',
     },
     input1:{
-        margin: 15,
-        height: 40, 
-        width: 250,
-        borderColor: '#FFFAFA',
+        color: '#FFFAFA',
+        margin: 10,
+        height: 55, 
+        width: 400,
+        borderColor: '#000000',
         borderWidth: 1,
-        padding: 10,
+        padding: 20,
         backgroundColor: '#000000', 
-        borderRadius: 10
+        borderRadius: 20
     },
     touch:{
-        backgroundColor: '#FFFAFA',
-        borderRadius: 10,
-        width: 90,
-        padding: 10,
-        marginHorizontal: 95
+        backgroundColor: '#000000',
+        borderRadius: 30,
+        width: 120,
+        padding: 15,
+        marginHorizontal: 150
     }
   });
 

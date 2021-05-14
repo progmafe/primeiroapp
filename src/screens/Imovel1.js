@@ -12,13 +12,13 @@ class Imovel1 extends React.Component {
         <View style={{margin:10}}>
           <Image 
             source={require('../images/Casa.png')} 
-            style={styles.logo}
+            style={styles.logo} 
           /> 
         </View>
         
         <View style={styles.container}>      
           <Text style={{fontWeight: "bold"}}>
-            Casa perfeita para sua família.
+            Casa (Campolim)
             {"\n"}{"\n"}
           </Text>
           <Text>
@@ -51,12 +51,12 @@ const styles = StyleSheet.create({
       backgroundColor: '#00FF00',
       alignItems: 'stretch',
       justifyContent: 'space-between',
-      margin:20,
-      height:400,
+      margin:10,
+      height:300
     },
     logo:{
-      width: 335,
-      height:100,
+      width: 390,
+      height:390,
       resizeMode:'contain',
     }
   });

@@ -5,7 +5,7 @@ class HomeScreen extends React.Component {
 
 state = {
   data: [
-    { id: 0, full_name: 'Imóvel 1', tipo:'Tipo do imóvel: Casa.' },
+    { id: 0, full_name: 'Imóvel 1', tipo:'Tipo do imóvel: Casa ' },
 
     { id: 1, full_name: 'Imóvel 2', tipo:'Tipo do imóvel: Casa Condomínio' },
     
@@ -52,11 +52,10 @@ render() {
 const styles = StyleSheet.create({
   text:{
     fontSize:25,
-    fontFamily:'Verdana',
+    backgroundColor: '#00FF00'
   },
   text2:{
-    fontFamily:'Verdana',
-    fontSize:16,
+    fontSize:16
   },
   list: {
     paddingHorizontal: 20,
