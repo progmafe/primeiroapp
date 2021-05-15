@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, StyleSheet, TextInput, TouchableOpacity, View, ImageBackground} from 'react-native';
+import {Text, StyleSheet, TextInput, TouchableOpacity, View, ImageBackground} from 'react-native';
 
 
 class LoginScreen extends React.Component {
@@ -20,7 +20,7 @@ class LoginScreen extends React.Component {
     return(
         <View style={styles.keyboard}>
             <View>
-               <Text style={styles.title}>Techrabbit Imóveis</Text>
+               <Text style={styles.title}>🐰 TECHRABBIT IMÓVEIS 🐰</Text>
                 <TextInput
                 style={styles.input1}
                 placeholder="E-mail"
@@ -40,25 +40,23 @@ class LoginScreen extends React.Component {
                 style={styles.touch} 
                 onPress={this.login_click}
                 >
-                    <Text style={styles.texto}>Entrar</Text> 
+                    <Text style={styles.texto}>LOGIN</Text> 
                 </TouchableOpacity>
             </View>
         </View>
     );
 }}
 
-
-
 const styles = StyleSheet.create({
     title:{
+        textAlign:"center",
         fontWeight:"bold",
-        fontSize:40,
+        fontSize: 40,
         color:"#000000",
         alignItems: 'center',
-        marginBottom:10,
-        paddingHorizontal: 100
+        marginBottom:20,
     }, 
-    texto: {
+    texto: {  
       fontSize: 18,
       color:'#FFFAFA',
       alignItems: 'center',
@@ -73,10 +71,10 @@ const styles = StyleSheet.create({
     input1:{
         color: '#FFFAFA',
         margin: 10,
-        height: 55, 
+        height: 50, 
         width: 400,
         borderColor: '#000000',
-        borderWidth: 1,
+        borderWidth: 8,
         padding: 20,
         backgroundColor: '#000000', 
         borderRadius: 20
@@ -86,7 +84,7 @@ const styles = StyleSheet.create({
         borderRadius: 30,
         width: 120,
         padding: 15,
-        marginHorizontal: 150
+        marginHorizontal: 150  
     }
   });
 

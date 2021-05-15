@@ -5,7 +5,7 @@ class HomeScreen extends React.Component {
 
 state = {
   data: [
-    { id: 0, full_name: 'Imóvel 1', tipo:'Tipo do imóvel: Casa ' },
+    { id: 0, full_name: 'Imóvel 1', tipo:'Tipo do imóvel: Casa Campolim' },
 
     { id: 1, full_name: 'Imóvel 2', tipo:'Tipo do imóvel: Casa Condomínio' },
     
@@ -24,7 +24,8 @@ state = {
       style={styles.listItem}>
         <Text style={styles.text}>{item.full_name} {"\n"} <Text style={styles.text2}>{item.tipo} {"\n"}</Text></Text>
 
-        <Button
+        <Button 
+          style={{backgroundColor:'#000000'}}
           title="Mais informaçóes"
           onPress={() =>
             this.props.navigation.navigate('Imóvel 1')
@@ -37,7 +38,7 @@ state = {
 render() {
   return (
     <FlatList
-    style={{ marginTop: 30 }}
+    style={{ marginTop: 0 }}
     contentContainerStyle={styles.list}
     data={this.state.data}
     renderItem={this.renderItem}
@@ -55,15 +56,16 @@ const styles = StyleSheet.create({
     backgroundColor: '#00FF00'
   },
   text2:{
-    fontSize:16
+    fontSize:18,
   },
   list: {
-    paddingHorizontal: 20,
+    marginTop: 0,
+    paddingHorizontal: 0,
   },
   listItem: {
     backgroundColor: '#00FF00',
     marginTop: 20,
-    padding: 30,
+    padding: 5,
   },
 });
 
