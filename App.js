@@ -6,6 +6,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import LoginScreen from './src/screens/LoginScreen';
 import HomeScreen from './src/screens/HomeScreen';
 import Imovel1 from './src/screens/Imovel1';
+import NotificationScreen from './src/screens/NotificationScreen';
 
 const Stack = createStackNavigator();
 
@@ -14,11 +15,17 @@ class App extends React.Component {
     return (
       <NavigationContainer>
         <Stack.Navigator>
-          <Stack.Screen
+
+        <Stack.Screen
             name="Login"
             component={LoginScreen}
           />
-
+          
+        <Stack.Screen
+            name="Notificação"
+            component={NotificationScreen}
+          />
+      
           <Stack.Screen 
             name="Home"
             component={HomeScreen}
@@ -28,6 +35,7 @@ class App extends React.Component {
             name="Imóvel 1"
             component={Imovel1}
           />
+
         </Stack.Navigator>
       </NavigationContainer>
     );

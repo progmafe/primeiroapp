@@ -1,6 +1,5 @@
 import React from 'react';
-import {Text, StyleSheet, TextInput, TouchableOpacity, View, ImageBackground} from 'react-native';
-
+import {Image, Text, StyleSheet, TextInput, TouchableOpacity, View, ImageBackground} from 'react-native';
 
 class LoginScreen extends React.Component {
 
@@ -19,15 +18,15 @@ class LoginScreen extends React.Component {
     render(){
     return(
         <View style={styles.keyboard}>
-            <View>
-               <Text style={styles.title}>🐰 TECHRABBIT IMÓVEIS 🐰</Text>
+               <Image source={require('../images/Logo.png')} style= {styles.imagelogo}/>
+               <Text style={styles.title}> TECHRABBIT IMÓVEIS </Text>
+               <View>
                 <TextInput
                 style={styles.input1}
                 placeholder="E-mail"
                 autoCorrect={false}
                 onChangeText={text => this.setState({email:text})}
                 />
-
                 <TextInput
                 style={styles.input1}
                 placeholder="Senha"
@@ -85,7 +84,14 @@ const styles = StyleSheet.create({
         width: 120,
         padding: 15,
         marginHorizontal: 150  
+    },
+    imagelogo:{ 
+        width: 250,
+        height: 250,
+        resizeMode: 'contain',
     }
-  });
+
+  }
+  );
 
 export default LoginScreen;
