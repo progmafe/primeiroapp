@@ -25,8 +25,8 @@ state = {
         <Text style={styles.text}>{item.full_name} {"\n"} <Text style={styles.text2}>{item.tipo} {"\n"}</Text></Text>
 
         <Button 
-          style={{backgroundColor:'#000000'}}
           title="Mais informaçóes"
+          color="#000000"
           onPress={() =>
             this.props.navigation.navigate('Imóvel 1')
           }
@@ -53,20 +53,28 @@ render() {
 const styles = StyleSheet.create({
   text:{
     fontSize:25,
-    backgroundColor: '#00FF00'
+    fontFamily:'sans-serif',
+    color: '#000000',
+    textAlign:'center',
   },
+
   text2:{
-    fontSize:18,
+    fontFamily:'sans-serif',
+    fontSize:20,
+    textAlign:'center'
   },
+
   list: {
-    marginTop: 0,
-    paddingHorizontal: 0,
+    backgroundColor: '#32CD32',
   },
+
   listItem: {
     backgroundColor: '#00FF00',
-    marginTop: 20,
-    padding: 5,
+    margin: 8,
+    padding: 15,
+    borderRadius: 40
   },
+  
 });
 
 export default HomeScreen;

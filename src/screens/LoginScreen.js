@@ -50,14 +50,15 @@ const styles = StyleSheet.create({
     title:{
         textAlign:"center",
         fontWeight:"bold",
-        fontSize: 40,
+        fontSize: 30,
         color:"#000000",
         alignItems: 'center',
         marginBottom:20,
     }, 
     texto: {  
       fontSize: 18,
-      color:'#FFFAFA',
+      color:'#000000',
+      fontWeight:'bold',
       alignItems: 'center',
       paddingHorizontal: 15
     },
@@ -68,26 +69,33 @@ const styles = StyleSheet.create({
         backgroundColor: '#00FF00',
     },
     input1:{
-        color: '#FFFAFA',
+        color: '#000000',
         margin: 10,
+        marginLeft: 33,
         height: 50, 
-        width: 400,
-        borderColor: '#000000',
-        borderWidth: 8,
+        width: 350,
+        borderWidth: 5,
         padding: 20,
-        backgroundColor: '#000000', 
-        borderRadius: 20
+        backgroundColor: '#FFFFFF', 
+        borderRadius: 30,
+        fontWeight:'bold'
     },
     touch:{
-        backgroundColor: '#000000',
+        backgroundColor: '#FFFFFF',
         borderRadius: 30,
         width: 120,
-        padding: 15,
-        marginHorizontal: 150  
+        padding: 7,
+        marginHorizontal: 150,
+        margin: 10,
+        borderColor:'#000000',
+        borderWidth: 5,
+        alignItems:'center'
+        
+
     },
     imagelogo:{ 
-        width: 250,
-        height: 250,
+        width: 260,
+        height: 260,
         resizeMode: 'contain',
     }
 

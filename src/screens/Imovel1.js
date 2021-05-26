@@ -1,15 +1,15 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, Image } from 'react-native';
+import { StyleSheet, Text, View, Button, Image, } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 
 class Imovel1 extends React.Component {
   render() {
     return (
-      <View style={{flex:1, justifyContent: 'center'}}> 
+      <View style={{flex:1, justifyContent: 'center',}}> 
       
       <ScrollView>
         
-        <View style={{margin:10}}>
+        <View style={{alignItems:'center'}}>
           <Image 
             source={require('../images/Casa.png')} 
             style={styles.logo} 
@@ -17,20 +17,18 @@ class Imovel1 extends React.Component {
         </View>
         
         <View style={styles.container}>      
-          <Text style={{fontWeight: "bold"}}>
-            Casa (Campolim)
+          <Text style={{fontWeight: "bold", fontSize:25,}}>
+            Casa Campolim
             {"\n"}
           </Text>
-          <Text>
-            Imóvel de 100 m², com 3 dormitório sendo 1 súite, sala de jantar e de descanso, 3 banheiros, cozinha e área de serviço. Possui garagem coberta para 2 carros.
-            {"\n"}{"\n"}
+          <Text style={{fontSize:17, textAlign:'center'}}>
+            Imóvel de 100 m², com 3 dormitório sendo 1 súite, sala de jantar e de descanso, 3 banheiros, cozinha e área de serviço.
+            Possui garagem coberta para 2 carros.
             Localização: Bairro nobre residencial próximo a pista de caminhada do Campolim, acesso a pontos comerciais, farmácias, shopping e etc. A melhor localização de Sorocaba. Casa nova já mobiliada e decorada.
-            {"\n"}{"\n"}
+            {"\n"}
           </Text>
 
-          <Button backgroundColor ="#000000#"
-            title="Voltar"
-            onPress={() =>this.props.navigation.navigate('Home')} 
+          <Button title="Voltar" color="#000000" onPress={() =>this.props.navigation.navigate('Home')} 
           />
         </View>
       
@@ -44,17 +42,23 @@ class Imovel1 extends React.Component {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#00FF00',
-      alignItems: 'stretch',
-      justifyContent: 'space-between',
+      color: '#00FF00',
+      alignItems: 'center',
       margin:10,
-      height:300
+      height:350,
+      justifyContent: 'center'
+    
     },
     logo:{
-      width: 390,
-      height:390,
-      resizeMode:'contain',
-    }
-  });
+      width: 350,
+      height:350,
+      margin:10,
+      alignItems:'center',
+      justifyContent: 'center'
+    },
+   
+   
+  }
+  );
 
 export default Imovel1;

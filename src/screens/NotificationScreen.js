@@ -20,8 +20,8 @@ export default class NotificationScreen extends React.Component {
 
   _sendImmediateNotification () {
     const localNotification = {
-      title: 'Immediate testing Title',
-      body: 'Testing body',
+      title: 'Olá! Seja Bem vindo!',
+      body: 'Voce acessou o Aplicativo de Imóveis da TechRabbit!',
       data: { type: 'immediate' }
     }
 
@@ -34,8 +34,8 @@ export default class NotificationScreen extends React.Component {
 
   _sendDelayedNotification () {
     const localNotification = {
-      title: 'Delayed testing Title',
-      body: 'Testing body',
+      title: 'Usuário',
+      body: 'Esperamos que esteja gostando da experiência!',
       data: { type: 'delayed' }
     }
     const schedulingOptions = {
@@ -52,8 +52,8 @@ export default class NotificationScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Button title='Send Immediate Notification' onPress={() => this._sendImmediateNotification()} />
-        <Button title='Send Delayed Notification' onPress={() => this._sendDelayedNotification()} />
+        <Button title='Notificação Imediata' onPress={() => this._sendImmediateNotification()} />
+        <Button title='Notificação Delay' onPress={() => this._sendDelayedNotification()} />
       </View>
     );
   }
