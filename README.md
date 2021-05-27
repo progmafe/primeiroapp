@@ -5,17 +5,9 @@ O aplicativo é basicamente uma tela de login, uma tela de home e uma de especif
 
 Para acessar na tela de login com usuário e senha é necessário email ser: Email@email.com e senha: 123
 
-➪ Tela de login:
+➪ Telas
 
 
 
-➪ Tela Home: 
 
-
-➪ Tela de descrição: 
-
-
-➪ Notificação 1
-
-
-➪ Notificação 2 
+➪ Notificações
